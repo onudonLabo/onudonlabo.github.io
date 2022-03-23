@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Train+One&display=swap');
+body {
+	margin: 0;
+}
+#bar {
+	position: fixed;
+	top: 13vh;
+	width: 0vw;
+	height: 3.5px;
+	background-color: #000;
+}
+header {
+	display: flex;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	height: 13vh;
+	align-items: center;
+	justify-content: center;
+	background-color: #fff;
+	z-index: 100;
+}
+#title {
+	font-family: 'Train One', cursive;
+	font-size: calc(3vh + 3vw);
+	margin: 0;
+}
+#menu {
+	position: fixed;
+	top: calc(6.5vh - 0.77vw - 0.77vh);
+	right: 2vw;
+	width: calc(2vh + 2vw);
+	height: calc(1.6vh + 1.6vw);
+}
+.menu {
+	background-color: #000;
+	width: calc(2vh + 2vw);
+	height: 2px;
+	margin-bottom: calc(0.5vh + 0.5vw);
+}
