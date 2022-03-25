@@ -23,7 +23,7 @@ email: onudonlabo@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   マイクラサーバーの知識どころ。spigot plugin, Minecraft serverなどの情報を発信しております。
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://onudonlabo.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: onudonLabo
 github_username:  onudonlabo
 
