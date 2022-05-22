@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap');
 body {
 	margin: 0;
-	overflow-y: scroll;
+	overflow-y: hidden;
     -ms-overflow-style: none;
     scrollbar-width: none;
     line-height: 0;
@@ -12,9 +12,10 @@ body::-webkit-scrollbar {
 }
 
 #loaded-message {
+	display: flex;
+	justify-content: space-around;
 	color: #fff;
 	font-size: calc(2.3vw + 2.3vh);
 	font-family: 'Raleway', sans-serif;
 	margin-top: calc(50vh - (2.3vw + 2.3vh));
-	text-align: center;
 }
