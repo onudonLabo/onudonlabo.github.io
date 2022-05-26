@@ -5,12 +5,16 @@ body {
     -ms-overflow-style: none;
     scrollbar-width: none;
     line-height: 0;
-    background-color: #000;
 }
 body::-webkit-scrollbar { 
 	display:none;
 }
-
+:root {
+	border-color: #000;
+	--darkreader-neutral-background: #000;
+	background-color: #000;
+	scrollbar-color: #000 #000;
+}
 #loaded-message {
 	display: flex;
 	justify-content: space-around;
@@ -18,4 +22,5 @@ body::-webkit-scrollbar {
 	font-size: calc(2.3vw + 2.3vh);
 	font-family: 'Raleway', sans-serif;
 	margin-top: calc(50vh - (2.3vw + 2.3vh));
+	border-color: #000;
 }

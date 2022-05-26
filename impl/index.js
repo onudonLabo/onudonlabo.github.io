@@ -1,6 +1,7 @@
 window.addEventListener("DOMContentLoaded", startup());
 var camera, scene, renderer,z;
 var ticks;
+var dsu;
 
 async function loaded() {
   var sleep = (ms) => new Promise((resolve) => setTimeout(resolve,ms));
@@ -77,15 +78,20 @@ function init() {
 function tick() {
   ticks = requestAnimationFrame( tick );
   render();
-  if (z <= -2000) {cancelAnimationFrame( ticks );console.log("TEST")}
+  if (z <= -2000) {cancelAnimationFrame( ticks );console.log("TEST");shutload()}
 }
-
-function render() {
+function shutload() {
+  dsu.style.display = "none";
+}
+async function render() {
+  var sleep = (ms) => new Promise((resolve) => setTimeout(resolve,ms));
   z -= 6;
   camera.position.z = z;
+  await sleep(1)
   renderer.render( scene, camera );
 }
 async function startup() {
+  dsu = document.getElementById('startup');
   await loaded()
   await $('#loaded-message').hide()
   await init()
