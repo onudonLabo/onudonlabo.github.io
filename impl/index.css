@@ -12,8 +12,10 @@ body::-webkit-scrollbar {
 :root {
 	border-color: #000;
 	--darkreader-neutral-background: #000;
-	background-color: #000;
 	scrollbar-color: #000 #000;
+}
+html {
+	background-color: #000;
 }
 #loaded-message {
 	display: flex;
