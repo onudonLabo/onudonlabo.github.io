@@ -14,7 +14,7 @@ body::-webkit-scrollbar {
 	--darkreader-neutral-background: #000;
 	scrollbar-color: #000 #000;
 }
-html:after {
+html {
 	background-color: #000;
 }
 #loaded-message {
