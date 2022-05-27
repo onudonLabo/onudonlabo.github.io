@@ -1,3 +1,4 @@
+//Respect for https://threejs.org/examples/?q=lines#webgl_lines_sphere;
 window.addEventListener("DOMContentLoaded", startup());
 var camera, scene, renderer,z;
 var ticks;
